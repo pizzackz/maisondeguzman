@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf') format('opentype');
+  }
+  
+body {
+    font-family: "Helvetica Neue Medium";
+}
+h1 {
+    text-align: center;
+    font-size: 55px;
+    margin-top: 15px;
+}
+label {
+    font-size: 23px;
+}
+.AddToCart {
+    text-align: center;
+    display: inline-flex;
+    background-color: #FFC000;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left:30px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    color:black;
+    text-decoration: none;
+}
+.AddToCart:hover {
+    background-color: #ffd149;
+}
+input {
+    margin-bottom:15px;
+    margin-top: 5px;
+    padding:7px;
+    width:340px;
+    font-size: 15px;
+}
+.place-order:hover {
+    background-color: rgb(131, 0, 0);
+    border-color: rgb(131,0,0);
+}
+.maindiv {
+    text-align: center;
+    margin:auto;
+}
+.maindiv select {
+    margin: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+.maindiv h3 {
+    font-size: 37px;
+    text-align: center;
+}
+.input-div, #credit-card-div{
+    margin:auto;
+    width: fit-content;
+    text-align: left;
+}
+.input-div label, #credit-card-div label {
+    margin-left: 5px;
+}
+.Special-Instructions {
+    height:200%
+}
+select {
+    font-family: 'Helvetica Neue Medium';
+}
+
+/* Order Summary div*/
+#div3 {
+    display: block;
+    position: fixed;
+    float: right;
+    top: 32%;
+    right: 15px;
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1.5px;
+}
+#summary {
+    overflow-y: scroll;
+    position: relative;
+    height: 350px; 
+}
+#order-summary {
+    font-size: 40px;
+    text-align: center;
+}
+#delivery-charge {
+    margin-top: -15px;
+}
+#total {
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+/* Order button */
+.place-order {
+    font-family: 'Helvetica Neue Medium';
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(176,0,0);
+    background-color:rgb(176,0,0);
+    color:white;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}

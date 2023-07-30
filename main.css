@@ -1,0 +1,90 @@
+/* Main */
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf') format('opentype');
+  }
+body {
+    margin:0;
+    padding:0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #181717;
+    padding:10px;
+    padding-bottom:4px;
+    text-align: center;
+}
+nav ul {
+    margin:auto;
+    margin-top:-8px;
+    margin-bottom: 5px;
+}
+nav ul li {
+    display:inline-block;
+    border: 1px white;
+    margin: 10px;
+}
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    font-family:'Helvetica Neue Medium';
+
+}
+
+nav a /* Photo: Maison De Guzman */{
+    display:inline-block;
+}
+
+#logo {
+    width:390px;
+    align-self: center;
+    margin:auto;
+    margin-left:30px;
+}
+#samepage a {
+    color:#FFC000;
+}
+
+/* Hover */
+.NormalNav a:hover {
+    color:#FFC000;
+}
+.NormalNav a:after {
+    content:'';
+    position: absolute;
+    background-color: #FFC000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* Order Now Nav bar */
+.OrderNow {
+    background-color: #FFC000;
+    border-radius: 5px;
+    padding:8px;
+}
+.OrderNow a {
+    color:black;
+}
+.OrderNow:hover {
+    background-color: #ffd453;
+    border-radius: 5px;
+    padding:8px;
+    transition: 0.6s;
+}
+
+
+
+
+
+
+

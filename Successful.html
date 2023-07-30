@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" type="text/css" href="successful.css">
+    <link rel="icon" href="media/titlewebpage.png" type="image/png">
+    <script src='cart.js'></script>
+</head>
+<body onload="success()">
+    <nav>
+        <a href="Home.html"><img src="media/logo.png" id="logo"></a>
+            <ul>
+                <li class="NormalNav"><a href="Home.html" onclick="clear_storage()">HOME</a></li>
+                <li class="NormalNav"><a href="AboutUs.html" onclick="clear_storage()">ABOUT US</a></li>
+                <li class="NormalNav"><a href="Reviews.html" onclick="clear_storage()">REVIEWS</a></li>
+                <li class='OrderNow'><a href="Menu.html" onclick="clear_storage()">ORDER NOW</a></li>
+            </ul>
+    </nav>
+<div id="div-left">
+<h2>Thank you for ordering!</h2>
+<p>We have sent the confirmation order to <b><span id="email"></span></b> and <b><span id="contact"></span></b>. If email confirmation has not arrived within 2 minutes, please check your spam folder.</p>
+<p>Your order number is</p>
+<h2 id="order-number"></h2>
+<h3>Order submitted on <span id="date"></span></h3>
+<hr>
+<table>
+<caption>CUSTOMER INFORMATION</caption>
+<tr><th>Name</th><th>Payment Mode</th></tr>
+<tr><td id="name"></td><td id="paymentmode"></td></tr>
+<tr><th>Email</th><th>Contact</th></tr>
+<tr><td id="email1"></td><td id="contact1"></td></tr>
+<tr><th>Address</th><th>Special Instructions</th></tr>
+<tr><td id="address"></td><td id="special-instructions"></td></tr>
+</table>
+</div>
+<div id="div-right">
+<h2 id="order-summary-title">ORDER SUMMARY</h2>
+<div id="summary"></div>
+<div id="summary2"></div>
+</div>
+
+
+
+
+</body>

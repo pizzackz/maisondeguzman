@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf') format('opentype');
+  }
+* {
+    font-family: 'Helvetica Neue Medium';
+    text-align: center;
+}
+h1 {
+    margin-top: 15px;
+    font-size: 50px;
+}
+p, ul {
+    font-size: 20px;
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf') format('opentype');
+  }
+* {
+    font-family:"Helvetica Neue Medium";
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+}
+table {
+    border-width: 1px;
+    margin:auto;
+    font-size: 30px;
+    margin-top: 10px;
+}
+h2 {
+    font-size:30px;
+    margin-bottom: 10px;
+}
+.list {
+    list-style-type:none;
+    text-align: center;
+    margin-left: -40px;
+    margin-bottom: 20px;
+}
+.list li {
+    margin:10px;
+    font-size: 22px;
+}
+.location {
+    font-size: 25px;
+}
+.text {
+    font-size: 20px;
+    margin:10px;
+    width: 1000px;
+    margin:auto;
+    display: block;
+}
+#p1 {
+    height: 400px;
+    width: auto;
+    margin: 5px;
+}
+#p2 {
+    height: 400px;
+    width: auto;
+    margin: 5px;
+}

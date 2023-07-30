@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf') format('opentype');
+  }
+@font-face{
+    font-family: 'Libre Franklin';
+    src: url('fonts/LibreFranklin-Light.ttf') format('truetype')
+}
+body {
+    font-family: 'Helvetica Neue Medium';
+}
+h2 {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+#div-left {
+    float:left;
+    width: 70%;
+}
+#div-right {
+    float:right;
+    width: 29%;
+    background-color: rgb(246, 246, 246);
+    border-left: rgb(169, 169, 169) solid 1px;
+    height:800px;
+    overflow: hidden;
+
+}
+#inner-div {
+    width:500px;
+    margin:auto;
+    height: fit-content;
+}
+
+/* Div left properties */
+#div-left p {
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+#order-number {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+hr {
+    width: 1000px;
+}
+
+table {
+    margin:auto;
+    width: fit-content;
+    font-family: 'Libre Franklin';
+    margin-top: 25px;
+}
+table caption {
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bolder;
+}
+table th {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 1000;
+    width: 350px;
+}
+table th, table caption, table td {
+    padding-left: 15%;
+}
+table td {
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+#order-summary-title {
+    margin-bottom: 40px;
+}
+#summary {
+    max-height: 460px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+#summary img {
+    height:80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border:black 1px solid;
+    border-radius: 10px;
+    float:left;
+}
+
+#summary h2 {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.price {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: -2px;
+}
+#summary2 h4 {
+    font-size: 30px;
+    margin-left: 5px;
+}
+#delivery-charge {
+    margin-top: -35px;
+}
+
+#summary2 h3 {
+    font-size: 40px;
+    margin-top: -10px;
+    margin-left: 5px;
+}

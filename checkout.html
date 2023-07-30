@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <link rel="icon" href="media/titlewebpage.png" type="image/png">
+    <script src='cart.js'></script>
+</head>
+<body onload="summary()">
+<nav>
+    <a href="Home.html" id="menutitle"><img src="media/logo.png" id="logo"></a>
+        <ul>
+            <li class="NormalNav"><a href="Home.html">HOME</a></li>
+            <li class="NormalNav"><a href="AboutUs.html">ABOUT US</a></li>
+            <li class="NormalNav"><a href="Reviews.html">REVIEWS</a></li>
+        </ul>
+        <a class="AddToCart" href="Menu.html">BACK TO PREVIOUS PAGE</a>
+</nav>
+<form id="form" onsubmit=" return place_order()">
+<h1>CHECKOUT</h1>
+<div class="maindiv">
+    <h3>PERSONAL INFORMATION</h3>
+    <div class="input-div">
+    <label for="name">Full Name</label><br>
+    <input type="text" name="name" required><br>
+    <label for="contact">Contact Number</label><br>
+    <input type="number" name="contact" min="10000000" max="99999999" required><br>
+    <label for="email">Email</label><br>
+    <input type="email" name="email" required><br>
+    </div>
+    <h3>PAYMENT</h3>
+    <label>Mode of payment</label><br>
+    <select name="payment" id="payment" onchange="paymentmode()" required>
+        <option value="credit-card" selected>Credit Card</option>
+        <option value="cash">Cash</option>
+    </select><br>
+    <div id="credit-card-div">
+        <label for="creditcard">Credit Card Number</label><br>
+        <input type="number" name="creditcard" min="1000000000000000" max="9999999999999999" required><br>
+        <label for="expiry">Expiry date</label><br>
+        <input type="text" name="expiry" placeholder="DD/YY" required><br>
+        <label for="CVV">CVV</label><br>
+        <input type="number" name="cvv" required><br>`
+    </div>
+    <h3>DELIVERY INFORMATION</h3>
+    <div class="input-div">
+    <label for="address">Home Address</label><br>
+    <input type="text" name="address" required><br>
+    <label for="unit-number">Unit Number (Optional)</label><br>
+    <input type="text" name="unit-number"><br>
+    <label for="special-instructions">Special Instructions</label><br>
+    <input type="text" name="special-instructions" class="Special-Instructions"><br>
+    <input type="submit" class="place-order" value="PLACE ORDER">
+    </div>
+</div>
+</form>
+
+<div id="div3">
+<h3 id="order-summary">ORDER SUMMARY</h3>
+<div id="summary"></div>
+<div id="summary2"></div>
+</div>
+
+
+</body>
+</html>

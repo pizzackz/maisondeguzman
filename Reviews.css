@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf') format('opentype');
+  }
+* {
+    font-family: 'Helvetica Neue Medium';
+    text-align: center;
+}
+h1 {
+    font-size: 55px;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 34px;
+}
+#img2 {
+    margin-top: -5px;
+    height: 100px;
+}
+#tripadvisor {
+    margin-top: -3px;
+}
+div{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}

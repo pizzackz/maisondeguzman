@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="icon" href="media/titlewebpage.png" type="image/png">
+    <script src='cart.js'></script>
+</head>
+<body onload="loadmenu()">
+<nav>
+    <a href="Home.html" id="menutitle"><img src="media/logo.png" id="logo"></a>
+        <ul>
+            <li class="NormalNav"><a href="Home.html">HOME</a></li>
+            <li class="NormalNav"><a href="AboutUs.html">ABOUT US</a></li>
+            <li class="NormalNav"><a href="Reviews.html">REVIEWS</a></li>
+        </ul>
+        <a class="AddToCart" onclick="cartpage()"><img src='media/AddToCart.svg'><div id="cartnumber">0</div><div>$<span id="carttotal">0.00</span></div></a>
+</nav>
+<div id="overlay"></div>
+<div id="itemviewer"></div>
+<div id="popup">
+</div><br>
+<div id="cartpage">
+</div>
+<h1>MENU</h1><br>
+<ul class="menunav">
+    <a href="#Appetizer"><li>Appetizer</li></a>
+    <a href="#Main"><li>Main</li></a>
+    <a href="#Desserts"><li>Desserts</li></a>
+    <a href="#Beverages"><li>Beverages</li></a>
+</ul>
+<hr>
+<div id="menu"> 
+<h2 class="foodtype" id="Appetizer">Appetizer</h2>
+<ul class="fooditem" id="unordered1">
+    <li><img src="media/menu/spanish tapas.jpg" onclick="viewitem(0)"><br>
+        <h2>Spanish Mixed Tapas</h2>
+        <p>A selection of delicious spanish tapas including ham croquettes, spanish omelette, stuffed olives and tomato bread.</p>
+        <p class="price">9 SGD</p>
+        <button onclick="addtocart(0)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/tacos al pastor.jpg" onclick="viewitem(1)"><br>
+        <h2>Tacos al pastor</h2>
+        <p>Originating from Mexico, marinated pork tacos grilled to perfection and served with onion, pineapple, and cilantro.</p>
+        <p class="price">11 SGD</p>
+        <button onclick="addtocart(1)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/mexican enchiladas.jpg" onclick="viewitem(2)"><br>
+        <h2>Mexican Enchiladas</h2>
+        <p>Corn tortillas filled with chicken or cheese, smothered in cheese and served with guacamole, sour cream, and refried beans.</p>
+        <p class="price">11 SGD</p>
+        <button onclick="addtocart(2)">Add to Cart</button>
+    </li>
+</ul>
+<hr>
+<h2 class="foodtype" id="Main">Main</h2>
+<ul class="fooditem" id="unordered2">
+    <li><img src="media/menu/chorizopizza.jpg" onclick="viewitem(3)"><br>
+        <h2>Pizza Margherita con Chorizo Picante</h2>
+        <p>A mexican twist featuring tangy tomato sauce, spicy chorizo, mouthwatering mozzarella all on a 16-inch classic Margherita pizza.</p>
+        <p class="price">16 SGD</p>
+        <button onclick="addtocart(3)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/mediterranean fiesta pizza.jpg" onclick="viewitem(4)"><br>
+        <h2>Mediterranean Fiesta Pizza</h2>
+        <p>Combining the vibrant colors of bell peppers, the tanginess of feta cheese, and the aromatic basil into a 16-inch pizza.</p>
+        <p class="price">16 SGD</p>
+        <button onclick="addtocart(4)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/mixed paella.jpg" onclick="viewitem(5)"><br>
+        <h2>Mixed Paella</h2>
+        <p>A delightful mixed paella with rice, fresh seafood, chicken, chorizo, and vegetables, capturing Spanish flavors.</p>
+        <p class="price">13 SGD</p>
+        <button onclick="addtocart(5)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/ratatouille vegetable stew.jpg" onclick="viewitem(6)"><br>
+        <h2>Ratatouille Vegetable Stew</h2>
+        <p>Originating from France, a tasty vegetable stew made with fresh eggplant, zucchini, peppers, and tomatoes, served with white rice.</p>
+        <p class="price">15 SGD</p>
+        <button onclick="addtocart(6)">Add to Cart</button>
+    </li>
+</ul>
+<hr>
+<h2 class="foodtype" id="Desserts">Desserts</h2>
+<ul class="fooditem" id="unordered3">
+    <li><img src="media/menu/creme brulee.jpg" onclick="viewitem(7)"><br>
+        <h2>Crème Brûlée</h2>
+        <p>A classic French dessert of smooth custard with a caramelized sugar topping.</p>
+        <p class="price">7 SGD</p>
+        <button onclick="addtocart(7)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/cheese fondue.jpg" onclick="viewitem(8)"><br>
+        <h2>Cheese Fondue</h2>
+        <p>Melted Swiss cheese with herbs de Provence, served with crispy bread.</p>
+        <p class="price">8 SGD</p>
+        <button onclick="addtocart(8)">Add to Cart</button>
+    </li>
+</ul>
+<hr>
+<h2 class="foodtype" id="Beverages">Beverages</h2>
+<ul class="fooditem" id="unordered4">
+    <li><img src="media/menu/perrier.jpg" onclick="viewitem(9)"><br>
+        <h2>Perrier Sparkling Water</h2>
+        <p class="price">5 SGD</p>
+        <button onclick="addtocart(9)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/horchata.jpg" onclick="viewitem(10)"><br>
+        <h2>Mexican Horchata</h2>
+        <p class="price">4 SGD</p>
+        <button onclick="addtocart(10)">Add to Cart</button>
+    </li>
+    <li><img src="media/menu/cafedulait.jpg" onclick="viewitem(11)"><br>
+        <h2>Café au lait</h2>
+        <p class="price">5 SGD</p>
+        <button onclick="addtocart(11)">Add to Cart</button>
+    </li>
+</ul>
+</div>
+<hr>
+<ul class="backtotop">
+    <a href="#menutitle"><li>BACK TO TOP</li></a>
+</div>
+    
+</body>
+</html>
